@@ -1,3 +1,8 @@
 -module(first).
--export([mult 2/, double/1]).
+-export([double/1]).
 
+mult(X, Y) ->
+    X * Y.
+
+double(X) ->
+    mult(2, X).
