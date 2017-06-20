@@ -6,4 +6,4 @@ factorial(X) when X>0 -> factorial(X-1)*X.  %when N>0 is to avoid negative infin
 
 fib(0) -> 1;
 fib(1) -> 1;
-fib(N) -> fib(N-1) + fib(N-2).
+fib(N) when N>1 -> fib(N-1) + fib(N-2).
